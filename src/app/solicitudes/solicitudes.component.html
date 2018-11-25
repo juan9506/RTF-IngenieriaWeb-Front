@@ -1,0 +1,31 @@
+<div class="container">
+  <h1>SOLICITUDES</h1>
+    <table class="table table-responsive" id="table">
+        <thead class="thead-light">
+          <tr>
+            <th>Id</th>
+            <th>Titulo</th>
+            <th>Descripcion</th>
+            <th>Creacion</th>
+            <th>Solucion</th>
+            <th>Responsable</th>
+            <th>Cliente</th>
+            <th>Complejidad</th>
+            <th>Respuesta</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let solicitud of solicitudes">
+            <td>{{solicitud.id}}</td>
+            <td>{{solicitud.titulo}}</td>
+            <td>{{solicitud.descripcion}}</td>
+            <td>{{solicitud.fecha_creacion | date}}</td>
+            <td>{{solicitud.fecha_solucion | date}}</td>
+            <td>{{solicitud.responsable}}</td>
+            <td>{{solicitud.cliente}}</td>
+            <td>{{solicitud.complejidad}}</td>
+            <td>{{solicitud.respuesta}}</td>
+          </tr>
+        </tbody>
+      </table>
+</div>

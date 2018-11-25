@@ -1,0 +1,14 @@
+.container{
+    margin: 3%;
+}
+
+#card{
+    width: 400px;
+    height: 250px;
+    margin-left: 40%;
+}
+
+input[type="submit"] {
+    display: block;
+    margin: 0 auto;
+}

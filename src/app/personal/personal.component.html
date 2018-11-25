@@ -1,0 +1,21 @@
+<div class="container">
+  <h1>PERSONAL</h1>
+    <table class="table table-responsive" id="table">
+        <thead class="thead-light">
+          <tr>
+            <th>Identificacion</th>
+            <th>Nombre</th>
+            <th>Cargo</th>
+            <th># Solicitudes</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let empleado of personal">
+            <td>{{empleado.id}}</td>
+            <td>{{empleado.nombres}}</td>
+            <td>{{empleado.rol}}</td>
+            <td id="nsolicitudes">{{empleado.solicitudes}}</td>
+          </tr>
+        </tbody>
+      </table>
+</div>
